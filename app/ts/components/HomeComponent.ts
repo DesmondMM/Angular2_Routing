@@ -2,7 +2,7 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'home',
-    template:`
+    template: `
     <div>
         <h1>Welcome to the Homepage</h1>
     </div>
