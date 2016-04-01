@@ -3,7 +3,6 @@ import {bootstrap} from 'angular2/platform/browser';
 import {ROUTER_DIRECTIVES,
         ROUTER_PROVIDERS,
         HashLocationStrategy,
-        Router,
         RouteConfig,
         } from 'angular2/router';
 
@@ -11,6 +10,8 @@ import {HomeComponent} from 'components/HomeComponent';
 import {AboutComponent} from 'components/AboutComponent';
 import {ContactComponent} from 'components/ContactComponent';
 import {LocationStrategy} from 'angular2/router';
+
+require('css/styles.scss');
 
 @Component({
     selector: 'router-app',
