@@ -12,7 +12,11 @@ export class AuthService {
     }
 
     getUser(): any {
+        return localStorage.getItem('username');
+    }
 
+    isLogged(): boolean {
+        return this.getUser() !==null;
     }
 
     logout(): any {
