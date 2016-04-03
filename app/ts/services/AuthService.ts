@@ -11,4 +11,12 @@ export class AuthService {
         return false;
     }
 
+    getUser(): any {
+
+    }
+
+    logout(): any {
+        localStorage.removeItem('username');
+    }
+
 }
