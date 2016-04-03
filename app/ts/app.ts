@@ -9,8 +9,15 @@ import {ROUTER_DIRECTIVES,
 import {HomeComponent} from 'components/HomeComponent';
 import {AboutComponent} from 'components/AboutComponent';
 import {ContactComponent} from 'components/ContactComponent';
+import {LoginComponent} from 'components/LoginComponent';
+import {ProtectedComponent} from 'components/ProtectedComponent';
 import {LocationStrategy} from 'angular2/router';
+import {AUTH_PROVIDERS} from "./services/AuthService";
 
+//Services
+import {AUTH_PROVIDERS} from 'services/AuthService'
+
+// Require
 require('css/styles.scss');
 
 @Component({
@@ -44,4 +51,5 @@ class RouteApp {
 
 bootstrap(RouteApp,
           [ROUTER_PROVIDERS,
+          AUTH_PROVIDERS,
           provide(LocationStrategy, {useClass: HashLocationStrategy})]);
